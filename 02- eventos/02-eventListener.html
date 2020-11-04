@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <p id="clicar">Ola, clique em mim!</p>
+    <br>
+    <p id="passandoMouse"> Passe o mouse aqui em cima!</p>
+
 </body>
 <script>
-/*
-addEventListener(tipoEvento, Função);
-Permite adicionar escutadores de forma amis flexivel, ou seja sem a necessidade
-de adicionar açoes nos botoes e nos elementos HTML.
-O codigo javaScript fica somente no Java Script.
-*/
+    /*
+    addEventListener(tipoEvento, Função);
+    Permite adicionar escutadores de forma amis flexivel, ou seja sem a necessidade
+    de adicionar açoes nos botoes e nos elementos HTML.
+    O codigo javaScript fica somente no Java Script.
+    */
+    //Exemplo 01
+
+    //resgatando elemento do html
+    let cliqueP = document.querySelector('#clicar');
+    //adiciona escutador para executar a função
+    cliqueP.addEventListener("click", recebeClick);
+    //função recebeClick
+    function recebeClick(eventoDeOrigem) {//Esse parametro e o retorno do evento
+        console.log(eventoDeOrigem.target);// retorna o prorpio eleemnto html, no caso um paragrafo
+        console.log(eventoDeOrigem.type);// retorna o tipo, no caso click, mas pode ser varios outros
+    }
+    //O eventListener pode ou não ter parametro, voce pode usar para saber informaçoes internas do eventListener
+
+    //Exemplo 02
+    //Sem passar parametros na função.
+    let passandoM = document.querySelector('#passandoMouse');
+    passandoM.addEventListener('mouseover', mouse);
+
+    function mouse(){
+        alert('Passou o mouse');
+    }
+
+    //Pode ser passado varias funçoes para um memso elemento.
+    //O addeventListener pode adicionar varias escutas em varios elemntos.
 
 </script>
+
 </html>
