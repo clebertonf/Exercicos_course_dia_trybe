@@ -13,6 +13,7 @@
         <div id="pai">
             <div id="primeiroFilho"></div>
             <div id="elementoOndeVoceEsta">
+
                 <div id="primeiroFilhoDoFilho"></div>
                 <div id="segundoEUltimoFilhoDoFilho"></div>
             </div>
@@ -21,11 +22,17 @@
             <div id="quartoEUltimoFilho"></div>
         </div>
     </div>
-    
 
     <script>
-
-
+         //01
+        let elementoOndeVoceEsta =  document.querySelector('#elementoOndeVoceEsta');
+        let divNova = document.createElement('div')
+        let conteudo = document.createTextNode('ola mundo!')
+       
+        divNova.appendChild(conteudo);
+        elementoOndeVoceEsta.appendChild(divNova);
+        //02
+        
     </script>
 </body>
 
