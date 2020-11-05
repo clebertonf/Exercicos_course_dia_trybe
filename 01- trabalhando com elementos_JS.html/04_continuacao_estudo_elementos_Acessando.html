@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="paiDoPai">
+    <div id="pai">
+      <div id="primeiroFilho"></div>
+      <div id="elementoOndeVoceEsta">
+        <div id="primeiroFilhoDoFilho"></div>
+        <div id="segundoEUltimoFilhoDoFilho"></div>
+      </div>
+      Atenção!
+      <div id="terceiroFilho"></div>
+      <div id="quartoEUltimoFilho"></div>
+    </div>
+  </div>
+  <script>
+      //01
+      document.querySelector('#elementoOndeVoceEsta')
+      //02
+      document.querySelector('#elementoOndeVoceEsta').parentNode.style = 'color:purple'
+      //03
+      document.querySelector('#elementoOndeVoceEsta').firstElementChild.innerText = 'Sou programador fullStack'
+      //04
+      document.querySelector('#pai').firstElementChild//
+      //05
+      document.querySelector('#elementoOndeVoceEsta').firstElementChild
+      //06
+      document.querySelector('#elementoOndeVoceEsta').nextSibling
+      //07
+      document.querySelector('#elementoOndeVoceEsta').nextSibling.nextSibling
+      //08
+      document.querySelector('#pai').lastElementChild.previousElementSibling
+
+  </script>
+</body>
+</html>
