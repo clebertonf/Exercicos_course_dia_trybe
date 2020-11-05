@@ -47,7 +47,22 @@
       elemento.appendChild(elementoNovo);
 
       //02
-      
+      elementoNovo2 = document.createElement('section');
+      elementoNovo2.id ='sectionTeste'
+      elemento.appendChild(elementoNovo2);
+
+      //03
+      elemento2 = document.querySelector('#primeiroFilhoDoFilho');
+      elementoNovo3 = document.createElement('aside');
+      elementoNovo3.id = 'asideTeste'
+      elemento2.appendChild(elementoNovo3);
+
+     //04
+     document.querySelector('#asideTeste').parentNode.parentElement.parentElement.lastElementChild.previousElementSibling
+
+     //removeChild()
+
+     
 
   </script>
 </body>
