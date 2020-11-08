@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStorage</title>
+</head>
+<body>
+
+<h1>Ola mundo</h1>
+    
+<script>
+    //criando chave/valor no webstorage
+    localStorage.setItem('nome', 'Cleberton');
+    localStorage.setItem('sobreNome', 'Francisco');
+    localStorage.setItem('ultimoNome', 'Carvalho')
+
+    //removendo um item
+    localStorage.removeItem('ultimoNome');
+
+    //Ler valor chave/valor
+    let valor = localStorage.getItem('nome');
+    let valor2 = localStorage.getItem('sobreNome');
+    let valor3 = localStorage.getItem('ultimoNome');
+    document.write('valor chave amarzenada no WebStorage: ' + valor + '<br>');
+    document.write('valor chave amarzenada no WebStorage: ' + valor2 + '<br>');
+    document.write('valor chave amarzenada no WebStorage: ' + valor3 + '<br>');
+
+    //remove Item
+    localStorage.removeItem('ultimoNome');
+
+    //remover todos
+    //localStorage.clear();
+
+    //sessionStorage são os mesmos metodos mas para somente a sessão, quando fechar
+    //o navegador tudo sera apagado.
+
+
+</script>
+</body>
+</html>
