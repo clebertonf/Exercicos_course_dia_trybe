@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+</head>
+
+<body>
+    <section>
+        <h4>digite seu nome</h4>
+        <input type="text" id="valor"></input>
+        <button type="button" id="nome"> Enviar</button>
+    </section>
+
+    <section id="section">
+        
+    </section>
+
+
+    <script>
+        let botao = document.querySelector('#nome');
+
+        botao.addEventListener('click', function(){
+            let nome = document.querySelector('#valor').value;
+            localStorage.setItem('nome', nome);
+        });
+
+        document.write('Nome guardado no Web Storage: ' + localStorage.getItem('nome'));
+
+    </script>
+</body>
+
+</html>
