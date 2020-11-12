@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
 
-    
+<body>
+    <header>
+        <h3>Formulário</h3>
+    </header>
+    <main>
+        <form action="" method="POST" enctype="multipart/form-data">
+            <label for="nome-completo">Nome Completo:</label>
+            <input type="text" name="nome" id="nome-completo" placeholder="Digite seu nome" required>
+            <br>
+            <br>
+
+            <label for="input-emal">E-mail:</label>
+            <input type="email" name="email" id="input-emal" placeholder="Digite seu e-mail" required>
+            <br>
+            <br>
+
+            <label for="input-estado">Estado onde você mora: </label>
+            <select name="estado" id="input-estado">
+                <option value="SP">São paulo</option>
+                <option value="BSB" selected>Brasilia</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+            <br>
+
+            <p>Insira uma foto:</p>
+            <input type="file" id="foto-perfil" name="foto">
+
+        </form>
+
+    </main>
+
 </body>
+
 </html>
